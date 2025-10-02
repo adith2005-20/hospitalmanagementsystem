@@ -7,5 +7,5 @@ if (!process.env.DATABASE_URL) {
     throw new Error('DATABASE URL NOT FOUND. UPDATE ENV VARS');
 }
 
-export const db = neon(process.env.DATABASE_URL as string);
+export const sql = neon(process.env.DATABASE_URL as string);
 
